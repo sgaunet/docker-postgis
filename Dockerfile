@@ -108,7 +108,8 @@ RUN set -eux \
         postgresql-${POSTGRES_MAJOR_VERSION}-postgis-${POSTGIS_MAJOR_VERSION}-scripts \
         postgresql-plpython3-${POSTGRES_MAJOR_VERSION} postgresql-${POSTGRES_MAJOR_VERSION}-pgrouting \
         postgresql-server-dev-${POSTGRES_MAJOR_VERSION}  postgresql-${POSTGRES_MAJOR_VERSION}-cron \
-        postgresql-${POSTGRES_MAJOR_VERSION}-mysql-fdw && \
+        postgresql-${POSTGRES_MAJOR_VERSION}-mysql-fdw \
+        postgresql-plperl-${POSTGRES_MAJOR_VERSION} && \
         pgxn install h3
 
 # TODO a case insensitive match would be more robust
